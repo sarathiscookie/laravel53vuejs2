@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        <link href="/css/app.css" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
@@ -85,15 +86,21 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>test</td>
-                                <td>test</td>
-                            </tr>
+                            @if(isset($users))
+                                @foreach($users as $user)
+                                    <tr>
+                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->email }}</td>
+                                    </tr>
+                                @endforeach
+                            @endif
                             </tbody>
                         </table>
                     </div>
                 </div>
+                {{ $users->links() }}
             </div>
         </div>
+    <style src="/js/app.js"></style>
     </body>
 </html>

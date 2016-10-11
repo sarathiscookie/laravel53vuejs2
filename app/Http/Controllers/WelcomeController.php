@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\User;
+
 class WelcomeController extends Controller
 {
     /**
@@ -15,7 +17,8 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::select('name', 'email')->paginate(5);
+        return view('welcome', ['users' => $users]);
     }
 
     /**
