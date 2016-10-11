@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'hello@example.com',
-        'name' => 'Example',
+        'address' => 'postmaster@sandboxf72ad4ef8cd54db798ae6eb396bbfe05.mailgun.org',
+        'name' => 'Laravel53Vuejs2',
     ],
 
     /*
