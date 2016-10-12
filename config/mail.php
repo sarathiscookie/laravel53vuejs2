@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'postmaster@sandboxf72ad4ef8cd54db798ae6eb396bbfe05.mailgun.org',
+        'address' => 'sarathiscookie@hotmail.com',
         'name' => 'Laravel53Vuejs2',
     ],
 
