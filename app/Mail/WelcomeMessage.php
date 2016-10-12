@@ -12,7 +12,7 @@ class WelcomeMessage extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $users;
+    protected $users;
     /**
      * Create a new message instance.
      *
@@ -30,6 +30,9 @@ class WelcomeMessage extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.welcomeMessage');
+        return $this->view('emails.welcomeMessage')->with([
+            'contactName' => $this->users->name,
+            'contactEmail' => $this->users->email
+        ]);
     }
 }

@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'sarathiscookie@hotmail.com',
+        'address' => 'laravel53vuejs2@hotmail.com',
         'name' => 'Laravel53Vuejs2',
     ],
 
