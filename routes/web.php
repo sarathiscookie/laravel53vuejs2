@@ -16,3 +16,7 @@ Route::get('/', 'WelcomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+/* Queue mails */
+Route::get('/mail', 'MailController@index');
+

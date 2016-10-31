@@ -30,7 +30,9 @@ class WelcomeMessage extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.welcomeMessage')->with([
+        return $this->view('emails.welcomeMessage')
+            ->subject('Welcome message')
+            ->with([
             'contactName' => $this->users->name,
             'contactEmail' => $this->users->email
         ]);

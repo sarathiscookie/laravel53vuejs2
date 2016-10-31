@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome {{$contactName}} </title>
+    <title>Welcome Email</title>
 </head>
 <body>
 <h1>Welcome to Laravel53Vuejs2</h1>
