@@ -70,6 +70,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     <a href="{{ url('/mail') }}">Mail(Send welcome message)</a>
+                    <a href="{{ url('/customerlogin') }}">Customer Login</a>
                     <a href="{{ url('/login') }}">Login</a>
                     <a href="{{ url('/register') }}">Register</a>
                 </div>

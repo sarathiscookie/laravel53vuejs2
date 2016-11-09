@@ -20,3 +20,8 @@ Route::get('/home', 'HomeController@index');
 /* Queue mails */
 Route::get('/mail', 'MailController@index');
 
+/*Customer Login*/
+Route::get('/customerlogin', 'MailController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
