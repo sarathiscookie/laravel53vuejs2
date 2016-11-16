@@ -34,6 +34,6 @@ class User extends Authenticatable
 
     /* Mutators */
     public function setNameAttribute($value){
-        $this->attributes['name'] = $value;
+        $this->attributes['name'] = strtoupper($value);
     }
 }
