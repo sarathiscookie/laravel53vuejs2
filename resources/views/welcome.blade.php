@@ -77,7 +77,21 @@
             @endif
 
             <div class="container">
-                <h1>Pagination</h1>
+                <h1>Collections</h1>
+                <h2>Collections implode and remainder</h2>
+                <div class="row">
+                    @if(isset($users))
+                        {{$users -> implode("name", ",")}}
+                    @endif
+                </div>
+                <div class="row">
+                    @if(isset($users))
+                        @foreach($users as $user)
+                            {{$user->name}}{{$loop->remaining ? ',' : ''}}
+                        @endforeach
+                    @endif
+                </div>
+                <h1>Pagination and collection(first & last)</h1>
                 <div class="row">
                     <div class="col-md-12">
                         <table class="table table-bordered table-hover">
@@ -91,8 +105,8 @@
                             @if(isset($users))
                                 @foreach($users as $user)
                                     <tr>
-                                        <td>{{ $user->name }}</td>
-                                        <td>{{ $user->email }}</td>
+                                        <td class="{{ $loop->last ? 'bg-danger' : '' }}">{{ $user->name }}</td>
+                                        <td class="{{ $loop->first ? 'bg-primary' : '' }}">{{ $user->email }}</td>
                                     </tr>
                                 @endforeach
                             @endif
