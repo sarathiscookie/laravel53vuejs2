@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/mail', 'MailController@index');
 
 /*Customer Login*/
-Route::get('/customerlogin', 'MailController@index');
+Route::get('/notification/mail', 'MailController@invoicepaid');
 
 Route::get('/profile', 'ProfileController@index');
 

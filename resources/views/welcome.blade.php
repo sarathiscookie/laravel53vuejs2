@@ -70,7 +70,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     <a href="{{ url('/mail') }}">Mail(Send welcome message)</a>
-                    <a href="{{ url('/customerlogin') }}">Customer Login</a>
+                    <a href="{{ url('/notification/mail') }}">Notification (Send Notification)</a>
                     <a href="{{ url('/login') }}">Login</a>
                     <a href="{{ url('/register') }}">Register</a>
                 </div>
@@ -78,7 +78,7 @@
 
             <div class="container">
                 <h1>Collections</h1>
-                <h2>Collections implode and remainder</h2>
+                <h2>Collections implode and Remaining</h2>
                 <div class="row">
                     @if(isset($users))
                         {{$users -> implode("name", ",")}}
