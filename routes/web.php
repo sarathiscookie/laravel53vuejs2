@@ -25,3 +25,6 @@ Route::get('/notification/mail', 'MailController@invoicepaid');
 
 Route::get('/profile', 'ProfileController@index');
 
+/*Vue JS*/
+Route::get('/vue', 'VueController@index');
+
