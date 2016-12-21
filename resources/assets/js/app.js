@@ -15,6 +15,13 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
-const app = new Vue({
+/*const app = new Vue({
     el: 'body'
+});*/
+
+new Vue({
+    el: '#root',
+    data: {
+        message: 'Hello world!'
+    }
 });

@@ -7,11 +7,17 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Profile</div>
 
-                <div class="panel-body">
-
+                <div class="panel-body" id="root">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Freetext</label>
+                        <input type="text" name="message" class="form-control" v-model="message">
+                        <p> {{ message }} </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+
+

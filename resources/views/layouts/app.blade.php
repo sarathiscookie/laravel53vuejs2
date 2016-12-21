@@ -13,6 +13,8 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
+    @yield('style')
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -52,6 +54,9 @@
                         @if (Auth::guest())
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
+                            <li><a href="{{ url('/vue') }}">Vue Function</a></li>
+                            <li><a href="{{ url('/mail') }}">Mail(Send welcome message)</a></li>
+                            <li><a href="{{ url('/notification/mail') }}">Notification (Send Notification)</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -83,5 +88,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    @yield('script')
 </body>
 </html>
