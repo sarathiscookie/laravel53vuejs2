@@ -19,9 +19,6 @@ Vue.component('example', require('./components/Example.vue'));
     el: 'body'
 });*/
 
-new Vue({
-    el: '#root',
-    data: {
-        message: 'Hello world!'
-    }
-});
+
+
+

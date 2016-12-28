@@ -88,6 +88,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="/js/core.js"></script>
     @yield('script')
 </body>
 </html>

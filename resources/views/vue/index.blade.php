@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">Freetext</label>
                         <input type="text" name="message" class="form-control" v-model="message">
-                        <p> {{ message }} </p>
+                        <p> @{{ message }} </p>
                     </div>
                 </div>
             </div>
